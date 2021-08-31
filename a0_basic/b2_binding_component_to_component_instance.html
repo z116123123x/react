@@ -23,7 +23,7 @@
           super(props);
           this.state = {};
           this.state.isHot = true;
-          // 這裡的 this 指向的是 Weather 創建的實例對象, this.changeWeather.bind(this) 會返回一個函數, 
+          // 構造器裡的 this 指向的是 Weather 創建的實例對象, this.changeWeather.bind(this) 會返回一個函數, 
           // 此函數的 this 指向 Weather 創建的實例對象, 
           // 再將此函數賦值給 this.changeWeatherBindWeatherInstance 屬性
           this.changeWeatherBindWeatherInstance = this.changeWeather.bind(this)
